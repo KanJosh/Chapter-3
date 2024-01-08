@@ -1,0 +1,1731 @@
+
+     Program PWSCF v.6.4.1 starts on  2Oct2023 at 16:57:57 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Waiting for input...
+     Reading input from standard input
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+               file O.pbe-n-kjpaw_psl.1.0.0.UPF: wavefunction(s)  2S 2P renormalized
+               file H.pbe-kjpaw_psl.1.0.0.UPF: wavefunction(s)  1S renormalized
+
+     gamma-point specific algorithms are used
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       22389   12785   3189              2518261  1088527  135883
+
+
+
+     bravais-lattice index     =            1
+     lattice parameter (alat)  =      28.3459  a.u.
+     unit-cell volume          =   22775.6292 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =         8.00
+     number of Kohn-Sham states=            8
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     350.0000  Ry
+     convergence threshold     =      1.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = SLA PW PBX PBC ( 1  4  3  4 0 0)
+     nstep                     =           50
+
+
+     celldm(1)=  28.345892  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for O  read from file:
+     /home/jk7877/qe_potentials/O.pbe-n-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: e99d9cef9b487d1ca56f5b95ecd0fd7a
+     Pseudo is Projector augmented-wave + core cor, Zval =  6.0
+     Generated using "atomic" code by A. Dal Corso v.6.3
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1095 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+     Q(r) pseudized with 0 coefficients 
+
+
+     PseudoPot. # 2 for H  read from file:
+     /home/jk7877/qe_potentials/H.pbe-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: d81a744832360e4a8af0b0b5b123bc2a
+     Pseudo is Projector augmented-wave, Zval =  1.0
+     Generated using "atomic" code by A. Dal Corso v.6.3MaX
+     Shape of augmentation charge: PSQ
+     Using radial grid of  929 points,  2 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        O              6.00    15.99900     O ( 1.00)
+        H              1.00     1.00784     H ( 1.00)
+
+     No symmetry found
+
+
+                                    s                        frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (     1          0          0      )
+                  (     0          1          0      )
+                  (     0          0          1      )
+
+ cart.    s( 1) = (  1.0000000  0.0000000  0.0000000 )
+                  (  0.0000000  1.0000000  0.0000000 )
+                  (  0.0000000  0.0000000  1.0000000 )
+
+
+     point group C_1 (1)    
+     there are  1 classes
+     the character table:
+
+       E    
+A      1.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           O   tau(   1) = (   0.2282763   0.5522340   0.3312289  )
+         2           H   tau(   2) = (   0.2928021   0.5503603   0.3336929  )
+         3           H   tau(   3) = (   0.2096863   0.5147859   0.3804754  )
+
+   Crystallographic axes
+
+     site n.     atom                  positions (cryst. coord.)
+         1           O   tau(   1) = (  0.2282763  0.5522340  0.3312289  )
+         2           H   tau(   2) = (  0.2928021  0.5503603  0.3336929  )
+         3           H   tau(   3) = (  0.2096863  0.5147859  0.3804754  )
+
+     number of k points=     1  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+                       cryst. coord.
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:  1259131 G-vectors     FFT dimensions: ( 180, 180, 180)
+
+     Smooth grid:   544264 G-vectors     FFT dimensions: ( 128, 128, 128)
+
+     Dynamical RAM for                 wfc:       8.30 MB
+
+     Dynamical RAM for     wfc (w. buffer):       8.30 MB
+
+     Dynamical RAM for           str. fact:      38.43 MB
+
+     Dynamical RAM for           local pot:       0.00 MB
+
+     Dynamical RAM for          nlocal pot:      12.45 MB
+
+     Dynamical RAM for                qrad:       3.87 MB
+
+     Dynamical RAM for          rho,v,vnew:     191.12 MB
+
+     Dynamical RAM for               rhoin:      63.71 MB
+
+     Dynamical RAM for            rho*nmix:     307.41 MB
+
+     Dynamical RAM for           G-vectors:      76.20 MB
+
+     Dynamical RAM for          h,s,v(r/c):       0.02 MB
+
+     Dynamical RAM for          <psi|beta>:       0.00 MB
+
+     Dynamical RAM for                 psi:      33.20 MB
+
+     Dynamical RAM for                hpsi:      33.20 MB
+
+     Dynamical RAM for                spsi:      33.20 MB
+
+     Dynamical RAM for      wfcinit/wfcrot:      16.60 MB
+
+     Dynamical RAM for           addusdens:     864.58 MB
+
+     Dynamical RAM for          addusforce:     970.25 MB
+
+     Estimated static dynamical RAM per process >     981.59 MB
+
+     Estimated max dynamical RAM per process >       1.91 GB
+
+     Initial potential from superposition of free atoms
+
+     starting charge    7.99998, renormalised to    8.00000
+
+     negative rho (up, down):  3.793E-03 0.000E+00
+     Starting wfcs are    6 randomized atomic wfcs +    2 random wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        7.2 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  5.0
+
+     negative rho (up, down):  5.140E-03 0.000E+00
+
+     total cpu time spent up to now is       14.4 secs
+
+     total energy              =     -43.84124717 Ry
+     Harris-Foulkes estimate   =     -44.17341516 Ry
+     estimated scf accuracy    <       0.45336305 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.67E-03,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.466E-03 0.000E+00
+
+     total cpu time spent up to now is       20.8 secs
+
+     total energy              =     -43.92917129 Ry
+     Harris-Foulkes estimate   =     -44.16862511 Ry
+     estimated scf accuracy    <       0.50064386 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.67E-03,  avg # of iterations =  1.0
+
+     negative rho (up, down):  3.522E-03 0.000E+00
+
+     total cpu time spent up to now is       26.7 secs
+
+     total energy              =     -43.91869930 Ry
+     Harris-Foulkes estimate   =     -43.97000844 Ry
+     estimated scf accuracy    <       0.07918154 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.90E-04,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.794E-03 0.000E+00
+
+     total cpu time spent up to now is       33.4 secs
+
+     total energy              =     -44.02361248 Ry
+     Harris-Foulkes estimate   =     -44.11324889 Ry
+     estimated scf accuracy    <       0.25600422 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.90E-04,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.863E-03 0.000E+00
+
+     total cpu time spent up to now is       39.4 secs
+
+     total energy              =     -44.00981717 Ry
+     Harris-Foulkes estimate   =     -44.03227677 Ry
+     estimated scf accuracy    <       0.09026091 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  9.90E-04,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.805E-03 0.000E+00
+
+     total cpu time spent up to now is       45.7 secs
+
+     total energy              =     -44.03788699 Ry
+     Harris-Foulkes estimate   =     -44.03786482 Ry
+     estimated scf accuracy    <       0.00058386 Ry
+
+     iteration #  7     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  7.30E-06,  avg # of iterations = 20.0
+
+     negative rho (up, down):  4.916E-03 0.000E+00
+
+     total cpu time spent up to now is       55.0 secs
+
+     total energy              =     -44.03789729 Ry
+     Harris-Foulkes estimate   =     -44.03808435 Ry
+     estimated scf accuracy    <       0.00057594 Ry
+
+     iteration #  8     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.20E-06,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.967E-03 0.000E+00
+
+     total cpu time spent up to now is       61.0 secs
+
+     total energy              =     -44.03789358 Ry
+     Harris-Foulkes estimate   =     -44.03792361 Ry
+     estimated scf accuracy    <       0.00016715 Ry
+
+     iteration #  9     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.09E-06,  avg # of iterations = 14.0
+
+     negative rho (up, down):  4.968E-03 0.000E+00
+
+     total cpu time spent up to now is       68.7 secs
+
+     total energy              =     -44.03466794 Ry
+     Harris-Foulkes estimate   =     -44.03467105 Ry
+     estimated scf accuracy    <       0.00001266 Ry
+
+     iteration # 10     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.58E-07,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.976E-03 0.000E+00
+
+     total cpu time spent up to now is       74.9 secs
+
+     total energy              =     -44.03466663 Ry
+     Harris-Foulkes estimate   =     -44.03466870 Ry
+     estimated scf accuracy    <       0.00000438 Ry
+
+     iteration # 11     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.47E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.976E-03 0.000E+00
+
+     total cpu time spent up to now is       80.6 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2821 -13.0397  -9.2842  -7.1916  -0.9566  -0.0669   0.2754   0.4084
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9410 ev
+
+!    total energy              =     -44.03466794 Ry
+     Harris-Foulkes estimate   =     -44.03466799 Ry
+     estimated scf accuracy    <       0.00000020 Ry
+
+     total all-electron energy =      -152.881549 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.30756790 Ry
+     hartree contribution      =      36.30985073 Ry
+     xc contribution           =      -8.85554430 Ry
+     ewald contribution        =       7.40250490 Ry
+     one-center paw contrib.   =      -9.58717333 Ry
+      -> PAW hartree energy AE =      29.62580549 Ry
+      -> PAW hartree energy PS =     -29.59133717 Ry
+      -> PAW xc energy AE      =     -18.31275665 Ry
+      -> PAW xc energy PS      =       8.69111500 Ry
+      -> total E_H with PAW    =      36.34431905 Ry
+      -> total E_XC with PAW   =     -18.47718596 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in  11 iterations
+
+     negative rho (up, down):  4.976E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00211607    0.00170673   -0.00223864
+     atom    2 type  2   force =     0.00484209    0.00078148   -0.00098827
+     atom    3 type  2   force =    -0.00272602   -0.00248821    0.00322691
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44806659   -1.23978319    1.63056536
+     atom    2 type  2   force =    -0.10967398    0.00081301   -0.00106484
+     atom    3 type  2   force =     0.03529285    0.06285677   -0.08266369
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.54186690    2.17595281   -2.86148788
+     atom    2 type  2   force =     3.76584969   -0.02009578    0.02643044
+     atom    3 type  2   force =    -1.22398278   -2.15585703    2.83505744
+     The local contribution  to forces
+     atom    1 type  1   force =     1.10332693   -0.94459551    1.24187518
+     atom    2 type  2   force =    -3.65139632    0.02010237   -0.02641778
+     atom    3 type  2   force =     1.18580543    2.09051158   -2.74916006
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01172476    0.01003956   -0.01320528
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00004452    0.00015014   -0.00005548
+     atom    2 type  2   force =    -0.00006389    0.00001896   -0.00000554
+     atom    3 type  2   force =     0.00003189    0.00005755   -0.00007623
+
+     Total force =     0.007840     Total SCF correction =     0.000205
+
+     BFGS Geometry Optimization
+
+     number of scf cycles    =   1
+     number of bfgs steps    =   0
+
+     energy   new            =     -44.0346679362 Ry
+
+     new trust radius        =       0.0050033201 bohr
+     new conv_thr            =       0.0000010000 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.423024313   8.284412412   4.967249339
+H        4.394593337   8.255817903   5.004870660
+H        3.143852347   7.720471679   5.708838949
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.977E-03 0.000E+00
+
+     total cpu time spent up to now is       91.0 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.964E-03 0.000E+00
+
+     total cpu time spent up to now is       97.5 secs
+
+     total energy              =     -44.03467012 Ry
+     Harris-Foulkes estimate   =     -44.03453924 Ry
+     estimated scf accuracy    <       0.00003077 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.85E-07,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      103.8 secs
+
+     total energy              =     -44.03467653 Ry
+     Harris-Foulkes estimate   =     -44.03469216 Ry
+     estimated scf accuracy    <       0.00003193 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.85E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.970E-03 0.000E+00
+
+     total cpu time spent up to now is      109.8 secs
+
+     total energy              =     -44.03467507 Ry
+     Harris-Foulkes estimate   =     -44.03467889 Ry
+     estimated scf accuracy    <       0.00000537 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.72E-08,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.963E-03 0.000E+00
+
+     total cpu time spent up to now is      116.2 secs
+
+     total energy              =     -44.03468241 Ry
+     Harris-Foulkes estimate   =     -44.03468947 Ry
+     estimated scf accuracy    <       0.00002263 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.72E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.962E-03 0.000E+00
+
+     total cpu time spent up to now is      122.3 secs
+
+     total energy              =     -44.03468267 Ry
+     Harris-Foulkes estimate   =     -44.03468335 Ry
+     estimated scf accuracy    <       0.00000715 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.72E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.963E-03 0.000E+00
+
+     total cpu time spent up to now is      128.6 secs
+
+     total energy              =     -44.03468345 Ry
+     Harris-Foulkes estimate   =     -44.03468333 Ry
+     estimated scf accuracy    <       0.00000358 Ry
+
+     iteration #  7     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.48E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.963E-03 0.000E+00
+
+     total cpu time spent up to now is      134.6 secs
+
+     total energy              =     -44.03468414 Ry
+     Harris-Foulkes estimate   =     -44.03468353 Ry
+     estimated scf accuracy    <       0.00000351 Ry
+
+     iteration #  8     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.39E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.964E-03 0.000E+00
+
+     total cpu time spent up to now is      140.6 secs
+
+     total energy              =     -44.03468966 Ry
+     Harris-Foulkes estimate   =     -44.03468419 Ry
+     estimated scf accuracy    <       0.00000473 Ry
+
+     iteration #  9     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.39E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.962E-03 0.000E+00
+
+     total cpu time spent up to now is      147.0 secs
+
+     total energy              =     -44.03467994 Ry
+     Harris-Foulkes estimate   =     -44.03469178 Ry
+     estimated scf accuracy    <       0.00002862 Ry
+
+     iteration # 10     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.39E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.965E-03 0.000E+00
+
+     total cpu time spent up to now is      152.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2400 -13.0001  -9.2807  -7.1819  -0.9666  -0.0675   0.2729   0.4081
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9312 ev
+
+!    total energy              =     -44.03468293 Ry
+     Harris-Foulkes estimate   =     -44.03468359 Ry
+     estimated scf accuracy    <       0.00000097 Ry
+
+     total all-electron energy =      -152.881564 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.21898987 Ry
+     hartree contribution      =      36.26514771 Ry
+     xc contribution           =      -8.84805423 Ry
+     ewald contribution        =       7.35115379 Ry
+     one-center paw contrib.   =      -9.58720231 Ry
+      -> PAW hartree energy AE =      29.52095191 Ry
+      -> PAW hartree energy PS =     -29.48653523 Ry
+      -> PAW xc energy AE      =     -18.28818198 Ry
+      -> PAW xc energy PS      =       8.66656299 Ry
+      -> total E_H with PAW    =      36.29956439 Ry
+      -> total E_XC with PAW   =     -18.46967322 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in  10 iterations
+
+     negative rho (up, down):  4.965E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00289555   -0.00227140    0.00298639
+     atom    2 type  2   force =    -0.00204278    0.00094243   -0.00123878
+     atom    3 type  2   force =    -0.00085277    0.00132898   -0.00174761
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44793874   -1.23943809    1.62991889
+     atom    2 type  2   force =    -0.10816444    0.00082875   -0.00109200
+     atom    3 type  2   force =     0.03476702    0.06203790   -0.08158101
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.52463439    2.16179636   -2.84283736
+     atom    2 type  2   force =     3.73719406   -0.02123032    0.02799429
+     atom    3 type  2   force =    -1.21255968   -2.14056604    2.81484307
+     The local contribution  to forces
+     atom    1 type  1   force =     1.09172510   -0.93500025    1.22954255
+     atom    2 type  2   force =    -3.63067831    0.02123780   -0.02800162
+     atom    3 type  2   force =     1.17697475    2.07959629   -2.73466726
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01178952    0.01009000   -0.01326843
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00025240    0.00020115   -0.00026631
+     atom    2 type  2   force =    -0.00030212    0.00002678   -0.00003649
+     atom    3 type  2   force =     0.00005711    0.00018141   -0.00023944
+
+     Total force =     0.005883     Total SCF correction =     0.000602
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+     number of scf cycles    =   2
+     number of bfgs steps    =   1
+
+     energy   old            =     -44.0346679362 Ry
+     energy   new            =     -44.0346829252 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0026707555 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.423890275   8.283736428   4.968138485
+H        4.394219777   8.256203948   5.004365980
+H        3.143359945   7.720761619   5.708454483
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.959E-03 0.000E+00
+
+     total cpu time spent up to now is      163.3 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     total cpu time spent up to now is      169.7 secs
+
+     total energy              =     -44.03468837 Ry
+     Harris-Foulkes estimate   =     -44.03482914 Ry
+     estimated scf accuracy    <       0.00001424 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.78E-07,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.966E-03 0.000E+00
+
+     total cpu time spent up to now is      176.0 secs
+
+     total energy              =     -44.03469178 Ry
+     Harris-Foulkes estimate   =     -44.03470007 Ry
+     estimated scf accuracy    <       0.00001779 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.78E-07,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.968E-03 0.000E+00
+
+     total cpu time spent up to now is      182.0 secs
+
+     total energy              =     -44.03469066 Ry
+     Harris-Foulkes estimate   =     -44.03469298 Ry
+     estimated scf accuracy    <       0.00000343 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.29E-08,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.973E-03 0.000E+00
+
+     total cpu time spent up to now is      188.2 secs
+
+     total energy              =     -44.03469470 Ry
+     Harris-Foulkes estimate   =     -44.03469823 Ry
+     estimated scf accuracy    <       0.00001080 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.29E-08,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.974E-03 0.000E+00
+
+     total cpu time spent up to now is      194.0 secs
+
+     total energy              =     -44.03469392 Ry
+     Harris-Foulkes estimate   =     -44.03469503 Ry
+     estimated scf accuracy    <       0.00000414 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.29E-08,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      199.7 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2561 -13.0262  -9.2781  -7.1896  -0.9635  -0.0674   0.2732   0.4074
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9389 ev
+
+!    total energy              =     -44.03469522 Ry
+     Harris-Foulkes estimate   =     -44.03469523 Ry
+     estimated scf accuracy    <          6.4E-09 Ry
+
+     total all-electron energy =      -152.881577 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25087325 Ry
+     hartree contribution      =      36.28377030 Ry
+     xc contribution           =      -8.85124149 Ry
+     ewald contribution        =       7.36759388 Ry
+     one-center paw contrib.   =      -9.58720664 Ry
+      -> PAW hartree energy AE =      29.56126266 Ry
+      -> PAW hartree energy PS =     -29.52682143 Ry
+      -> PAW xc energy AE      =     -18.29706480 Ry
+      -> PAW xc energy PS      =       8.67541693 Ry
+      -> total E_H with PAW    =      36.31821153 Ry
+      -> total E_XC with PAW   =     -18.47288936 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   6 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00072888   -0.00070302    0.00092870
+     atom    2 type  2   force =     0.00013175    0.00054562   -0.00071888
+     atom    3 type  2   force =    -0.00086063    0.00015740   -0.00020981
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44652718   -1.23820371    1.62830991
+     atom    2 type  2   force =    -0.10869955    0.00070363   -0.00092815
+     atom    3 type  2   force =     0.03512563    0.06225809   -0.08187048
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.52602853    2.16205578   -2.84317650
+     atom    2 type  2   force =     3.74710224   -0.01778343    0.02347292
+     atom    3 type  2   force =    -1.22107371   -2.14427234    2.81970359
+     The local contribution  to forces
+     atom    1 type  1   force =     1.09202393   -0.93472127    1.22903690
+     atom    2 type  2   force =    -3.63828945    0.01761867   -0.02326084
+     atom    3 type  2   force =     1.18509985    2.08217836   -2.73805822
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01175951    0.01006694   -0.01323883
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00003500    0.00009972   -0.00000503
+     atom    2 type  2   force =     0.00001770    0.00000723   -0.00000505
+     atom    3 type  2   force =    -0.00001320   -0.00000623    0.00001306
+
+     Total force =     0.001879     Total SCF correction =     0.000109
+
+     number of scf cycles    =   3
+     number of bfgs steps    =   2
+
+     energy   old            =     -44.0346829252 Ry
+     energy   new            =     -44.0346952218 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0018603012 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424410421   8.283232253   4.968805086
+H        4.394592292   8.256716694   5.003693613
+H        3.142467285   7.720753047   5.708460250
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.965E-03 0.000E+00
+
+     total cpu time spent up to now is      209.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  1.39E-08,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.970E-03 0.000E+00
+
+     total cpu time spent up to now is      218.9 secs
+
+     total energy              =     -44.03469873 Ry
+     Harris-Foulkes estimate   =     -44.03478794 Ry
+     estimated scf accuracy    <       0.00000066 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.31E-09,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      225.1 secs
+
+     total energy              =     -44.03469884 Ry
+     Harris-Foulkes estimate   =     -44.03469897 Ry
+     estimated scf accuracy    <       0.00000025 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.19E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      231.1 secs
+
+     total energy              =     -44.03469887 Ry
+     Harris-Foulkes estimate   =     -44.03469887 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.59E-10,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     total cpu time spent up to now is      237.6 secs
+
+     total energy              =     -44.03469892 Ry
+     Harris-Foulkes estimate   =     -44.03469896 Ry
+     estimated scf accuracy    <       0.00000011 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.59E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     total cpu time spent up to now is      243.7 secs
+
+     total energy              =     -44.03469891 Ry
+     Harris-Foulkes estimate   =     -44.03469892 Ry
+     estimated scf accuracy    <       0.00000003 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.59E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     total cpu time spent up to now is      249.5 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2554 -13.0378  -9.2687  -7.1889  -0.9619  -0.0672   0.2732   0.4072
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9382 ev
+
+!    total energy              =     -44.03469892 Ry
+     Harris-Foulkes estimate   =     -44.03469892 Ry
+     estimated scf accuracy    <          1.6E-09 Ry
+
+     total all-electron energy =      -152.881580 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25681111 Ry
+     hartree contribution      =      36.28677809 Ry
+     xc contribution           =      -8.85174571 Ry
+     ewald contribution        =       7.37098585 Ry
+     one-center paw contrib.   =      -9.58716801 Ry
+      -> PAW hartree energy AE =      29.57023711 Ry
+      -> PAW hartree energy PS =     -29.53579415 Ry
+      -> PAW xc energy AE      =     -18.29891838 Ry
+      -> PAW xc energy PS      =       8.67730741 Ry
+      -> total E_H with PAW    =      36.32122105 Ry
+      -> total E_XC with PAW   =     -18.47335669 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   6 iterations
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00017237    0.00002367   -0.00002954
+     atom    2 type  2   force =     0.00032620    0.00021526   -0.00028306
+     atom    3 type  2   force =    -0.00049857   -0.00023893    0.00031260
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44497739   -1.23689932    1.62655057
+     atom    2 type  2   force =    -0.10879949    0.00056844   -0.00074996
+     atom    3 type  2   force =     0.03537978    0.06230866   -0.08193569
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.52156687    2.15901598   -2.83913960
+     atom    2 type  2   force =     3.74864616   -0.01429527    0.01888089
+     atom    3 type  2   force =    -1.22707929   -2.14472071    2.82025871
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08844797   -0.93211846    1.22574057
+     atom    2 type  2   force =    -3.63954104    0.01395399   -0.01842999
+     atom    3 type  2   force =     1.19118774    2.08218836   -2.73803078
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174802    0.01005508   -0.01322235
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00004907   -0.00001847    0.00002645
+     atom    2 type  2   force =     0.00000772   -0.00000076    0.00000116
+     atom    3 type  2   force =     0.00000035   -0.00000410    0.00000554
+
+     Total force =     0.000817     Total SCF correction =     0.000060
+
+     number of scf cycles    =   4
+     number of bfgs steps    =   3
+
+     energy   old            =     -44.0346952218 Ry
+     energy   new            =     -44.0346989214 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0014264147 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424791489   8.283041286   4.969058225
+H        4.394914976   8.257074677   5.003224600
+H        3.141763533   7.720586031   5.708676123
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.968E-03 0.000E+00
+
+     total cpu time spent up to now is      259.8 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  2.44E-09,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.970E-03 0.000E+00
+
+     total cpu time spent up to now is      268.8 secs
+
+     total energy              =     -44.03469970 Ry
+     Harris-Foulkes estimate   =     -44.03474227 Ry
+     estimated scf accuracy    <       0.00000016 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.01E-09,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      274.8 secs
+
+     total energy              =     -44.03469972 Ry
+     Harris-Foulkes estimate   =     -44.03469971 Ry
+     estimated scf accuracy    <       0.00000001 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.30E-10,  avg # of iterations =  4.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      280.8 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2522 -13.0425  -9.2628  -7.1881  -0.9618  -0.0671   0.2730   0.4070
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9374 ev
+
+!    total energy              =     -44.03469972 Ry
+     Harris-Foulkes estimate   =     -44.03469972 Ry
+     estimated scf accuracy    <          3.1E-09 Ry
+
+     total all-electron energy =      -152.881581 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25406944 Ry
+     hartree contribution      =      36.28558859 Ry
+     xc contribution           =      -8.85154540 Ry
+     ewald contribution        =       7.36921463 Ry
+     one-center paw contrib.   =      -9.58715008 Ry
+      -> PAW hartree energy AE =      29.56839885 Ry
+      -> PAW hartree energy PS =     -29.53395794 Ry
+      -> PAW xc energy AE      =     -18.29827758 Ry
+      -> PAW xc energy PS      =       8.67668659 Ry
+      -> total E_H with PAW    =      36.32002950 Ry
+      -> total E_XC with PAW   =     -18.47313639 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   3 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00038809   -0.00009613    0.00012779
+     atom    2 type  2   force =     0.00037378    0.00001120   -0.00001463
+     atom    3 type  2   force =     0.00001431    0.00008493   -0.00011317
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44406343   -1.23608724    1.62547007
+     atom    2 type  2   force =    -0.10884359    0.00049378   -0.00065176
+     atom    3 type  2   force =     0.03548172    0.06221953   -0.08181784
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.51933955    2.15520400   -2.83410473
+     atom    2 type  2   force =     3.74916985   -0.01244895    0.01645282
+     atom    3 type  2   force =    -1.22983031   -2.14275505    2.81765191
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08639656   -0.92929471    1.22202006
+     atom    2 type  2   force =    -3.63995214    0.01196770   -0.01581760
+     atom    3 type  2   force =     1.19435116    2.08062603   -2.73595476
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174096    0.01005421   -0.01322122
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00023397    0.00002893   -0.00003831
+     atom    2 type  2   force =     0.00000120   -0.00000000   -0.00000000
+     atom    3 type  2   force =     0.00001328   -0.00000425    0.00000559
+
+     Total force =     0.000580     Total SCF correction =     0.000239
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+     number of scf cycles    =   5
+     number of bfgs steps    =   4
+
+     energy   old            =     -44.0346989214 Ry
+     energy   new            =     -44.0346997215 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0004928080 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424691127   8.282938900   4.969193869
+H        4.395141718   8.257152874   5.003122223
+H        3.141637152   7.720610221   5.708642856
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      291.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  3.55E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      300.1 secs
+
+     total energy              =     -44.03469973 Ry
+     Harris-Foulkes estimate   =     -44.03470692 Ry
+     estimated scf accuracy    <       0.00000005 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.69E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      305.8 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2515 -13.0434  -9.2619  -7.1883  -0.9620  -0.0672   0.2728   0.4069
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9376 ev
+
+!    total energy              =     -44.03469974 Ry
+     Harris-Foulkes estimate   =     -44.03469974 Ry
+     estimated scf accuracy    <          6.4E-09 Ry
+
+     total all-electron energy =      -152.881581 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25273308 Ry
+     hartree contribution      =      36.28513541 Ry
+     xc contribution           =      -8.85147286 Ry
+     ewald contribution        =       7.36826085 Ry
+     one-center paw contrib.   =      -9.58715202 Ry
+      -> PAW hartree energy AE =      29.56690272 Ry
+      -> PAW hartree energy PS =     -29.53246201 Ry
+      -> PAW xc energy AE      =     -18.29787935 Ry
+      -> PAW xc energy PS      =       8.67628661 Ry
+      -> total E_H with PAW    =      36.31957612 Ry
+      -> total E_XC with PAW   =     -18.47306559 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   2 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00021055    0.00012371   -0.00015957
+     atom    2 type  2   force =    -0.00023168   -0.00000842    0.00001009
+     atom    3 type  2   force =     0.00002113   -0.00011529    0.00014948
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44386849   -1.23592070    1.62525045
+     atom    2 type  2   force =    -0.10871839    0.00046695   -0.00061644
+     atom    3 type  2   force =     0.03551927    0.06226217   -0.08187358
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.51637170    2.15522483   -2.83412098
+     atom    2 type  2   force =     3.74684633   -0.01174208    0.01552147
+     atom    3 type  2   force =    -1.23047463   -2.14348275    2.81859951
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08444966   -0.92918937    1.22187370
+     atom    2 type  2   force =    -3.63841105    0.01126158   -0.01488718
+     atom    3 type  2   force =     1.19494852    2.08110583   -2.73657620
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174753    0.01005154   -0.01321775
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00002442   -0.00005278    0.00006931
+     atom    2 type  2   force =     0.00001539   -0.00000506    0.00000655
+     atom    3 type  2   force =    -0.00000808   -0.00001072    0.00001406
+
+     Total force =     0.000418     Total SCF correction =     0.000094
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+     number of scf cycles    =   6
+     number of bfgs steps    =   5
+
+     energy   old            =     -44.0346997215 Ry
+     energy   new            =     -44.0346997356 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0002337498 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424709936   8.282997730   4.969117245
+H        4.395039187   8.257110730   5.003177103
+H        3.141720874   7.720593534   5.708664600
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.972E-03 0.000E+00
+
+     total cpu time spent up to now is      316.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  3.16E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      325.0 secs
+
+     total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469390 Ry
+     estimated scf accuracy    <       0.00000003 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.38E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      331.4 secs
+
+     total energy              =     -44.03469980 Ry
+     Harris-Foulkes estimate   =     -44.03469981 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.95E-10,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      336.9 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2514 -13.0423  -9.2622  -7.1878  -0.9619  -0.0672   0.2729   0.4067
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9372 ev
+
+!    total energy              =     -44.03469980 Ry
+     Harris-Foulkes estimate   =     -44.03469980 Ry
+     estimated scf accuracy    <          3.6E-09 Ry
+
+     total all-electron energy =      -152.881581 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25316857 Ry
+     hartree contribution      =      36.28545064 Ry
+     xc contribution           =      -8.85152842 Ry
+     ewald contribution        =       7.36843502 Ry
+     one-center paw contrib.   =      -9.58715044 Ry
+      -> PAW hartree energy AE =      29.56841070 Ry
+      -> PAW hartree energy PS =     -29.53396960 Ry
+      -> PAW xc energy AE      =     -18.29813124 Ry
+      -> PAW xc energy PS      =       8.67653970 Ry
+      -> total E_H with PAW    =      36.31989174 Ry
+      -> total E_XC with PAW   =     -18.47311996 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   3 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00000586    0.00002262   -0.00002756
+     atom    2 type  2   force =    -0.00002489   -0.00000494    0.00000621
+     atom    3 type  2   force =     0.00001903   -0.00001768    0.00002136
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44397197   -1.23600738    1.62535170
+     atom    2 type  2   force =    -0.10876441    0.00048144   -0.00063535
+     atom    3 type  2   force =     0.03549347    0.06224213   -0.08184721
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.51773704    2.15526931   -2.83417139
+     atom    2 type  2   force =     3.74769215   -0.01212058    0.01601450
+     atom    3 type  2   force =    -1.22995511   -2.14314873    2.81815689
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08543149   -0.92926238    1.22197367
+     atom    2 type  2   force =    -3.63899892    0.01164868   -0.01539184
+     atom    3 type  2   force =     1.19445367    2.08091321   -2.73632014
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174437    0.01005290   -0.01321942
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00005670   -0.00001694    0.00002107
+     atom    2 type  2   force =     0.00001920   -0.00000160    0.00000209
+     atom    3 type  2   force =    -0.00000009   -0.00001142    0.00001501
+
+     Total force =     0.000056     Total SCF correction =     0.000068
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+     number of scf cycles    =   7
+     number of bfgs steps    =   6
+
+     energy   old            =     -44.0346997356 Ry
+     energy   new            =     -44.0346997958 Ry
+
+     CASE: energy  _new < energy  _old
+
+     small trust_radius: resetting bfgs history
+
+     new trust radius        =       0.0000361361 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424713037   8.283009702   4.969102659
+H        4.395026014   8.257108115   5.003180387
+H        3.141730946   7.720584177   5.708675901
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      347.2 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  3.77E-10,  avg # of iterations =  2.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      355.7 secs
+
+     total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469862 Ry
+     estimated scf accuracy    <       0.00000004 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.58E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      362.1 secs
+
+     total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469982 Ry
+     estimated scf accuracy    <       0.00000004 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.58E-10,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      367.6 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2514 -13.0422  -9.2624  -7.1879  -0.9620  -0.0672   0.2729   0.4065
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9372 ev
+
+!    total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469980 Ry
+     estimated scf accuracy    <          7.5E-09 Ry
+
+     total all-electron energy =      -152.881581 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25318028 Ry
+     hartree contribution      =      36.28558350 Ry
+     xc contribution           =      -8.85155402 Ry
+     ewald contribution        =       7.36834137 Ry
+     one-center paw contrib.   =      -9.58715233 Ry
+      -> PAW hartree energy AE =      29.56866749 Ry
+      -> PAW hartree energy PS =     -29.53422600 Ry
+      -> PAW xc energy AE      =     -18.29815403 Ry
+      -> PAW xc energy PS      =       8.67656020 Ry
+      -> total E_H with PAW    =      36.32002499 Ry
+      -> total E_XC with PAW   =     -18.47314785 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   3 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00002832   -0.00000303    0.00000962
+     atom    2 type  2   force =    -0.00000409   -0.00000976    0.00001068
+     atom    3 type  2   force =     0.00003241    0.00001279   -0.00002030
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44401465   -1.23600063    1.62534055
+     atom    2 type  2   force =    -0.10877035    0.00048369   -0.00063818
+     atom    3 type  2   force =     0.03548772    0.06223585   -0.08183869
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.51796677    2.15521402   -2.83408597
+     atom    2 type  2   force =     3.74780140   -0.01217535    0.01608185
+     atom    3 type  2   force =    -1.22983462   -2.14303867    2.81800413
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08559841   -0.92920196    1.22190011
+     atom    2 type  2   force =    -3.63908850    0.01170843   -0.01546525
+     atom    3 type  2   force =     1.19435573    2.08085506   -2.73623472
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174417    0.01005318   -0.01321971
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =     0.00004289   -0.00004512    0.00004710
+     atom    2 type  2   force =     0.00002668   -0.00000400    0.00000471
+     atom    3 type  2   force =    -0.00000309   -0.00001692    0.00002143
+
+     Total force =     0.000052     Total SCF correction =     0.000087
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+     number of scf cycles    =   8
+     number of bfgs steps    =   7
+
+     energy   old            =     -44.0346997958 Ry
+     energy   new            =     -44.0346997903 Ry
+
+     CASE: energy  _new > energy  _old
+
+     new trust radius        =       0.0000064985 bohr
+
+     trust_radius < trust_radius_min
+
+     resetting bfgs history
+
+     Message from routine bfgs:
+     history already reset at previous step: stopping
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424713037   8.283009702   4.969102659
+H        4.395026014   8.257108115   5.003180387
+H        3.141730946   7.720584177   5.708675901
+
+
+
+     Writing output data file h2o.sc.save/
+     Message from routine punch:
+     wavefunctions written to file
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      377.9 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  1.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  3.51E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      386.5 secs
+
+     total energy              =     -44.03469977 Ry
+     Harris-Foulkes estimate   =     -44.03469982 Ry
+     estimated scf accuracy    <       0.00000007 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.74E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      392.9 secs
+
+     total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469983 Ry
+     estimated scf accuracy    <       0.00000009 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  8.74E-10,  avg # of iterations =  1.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      398.8 secs
+
+     total energy              =     -44.03469979 Ry
+     Harris-Foulkes estimate   =     -44.03469979 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.07E-10,  avg # of iterations =  3.0
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     total cpu time spent up to now is      404.8 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 67942 PWs)   bands (ev):
+
+   -25.2512 -13.0420  -9.2622  -7.1877  -0.9620  -0.0672   0.2729   0.4063
+
+     occupation numbers 
+     1.0000   1.0000   1.0000   1.0000   0.0000   0.0000   0.0000   0.0000
+
+     the Fermi energy is    -6.9370 ev
+
+!    total energy              =     -44.03469980 Ry
+     Harris-Foulkes estimate   =     -44.03469980 Ry
+     estimated scf accuracy    <          3.3E-09 Ry
+
+     total all-electron energy =      -152.881581 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =     -69.25234594 Ry
+     hartree contribution      =      36.28455576 Ry
+     xc contribution           =      -8.85136699 Ry
+     ewald contribution        =       7.36834137 Ry
+     one-center paw contrib.   =      -9.58714598 Ry
+      -> PAW hartree energy AE =      29.56639525 Ry
+      -> PAW hartree energy PS =     -29.53195594 Ry
+      -> PAW xc energy AE      =     -18.29781875 Ry
+      -> PAW xc energy PS      =       8.67623345 Ry
+      -> total E_H with PAW    =      36.31899507 Ry
+      -> total E_XC with PAW   =     -18.47295228 Ry
+     smearing contrib. (-TS)   =       0.00326198 Ry
+
+     convergence has been achieved in   4 iterations
+
+     negative rho (up, down):  4.971E-03 0.000E+00
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00000980   -0.00001900    0.00002650
+     atom    2 type  2   force =     0.00001797    0.00001169   -0.00001531
+     atom    3 type  2   force =    -0.00000817    0.00000731   -0.00001119
+     The non-local contrib.  to forces
+     atom    1 type  1   force =     1.44407025   -1.23604984    1.62540272
+     atom    2 type  2   force =    -0.10876953    0.00048340   -0.00063778
+     atom    3 type  2   force =     0.03548797    0.06223531   -0.08183798
+     The ionic contribution  to forces
+     atom    1 type  1   force =    -2.51796677    2.15521402   -2.83408597
+     atom    2 type  2   force =     3.74780140   -0.01217535    0.01608185
+     atom    3 type  2   force =    -1.22983462   -2.14303867    2.81800413
+     The local contribution  to forces
+     atom    1 type  1   force =     1.08566497   -0.92927070    1.22197253
+     atom    2 type  2   force =    -3.63899068    0.01169610   -0.01544965
+     atom    3 type  2   force =     1.19434212    2.08079486   -2.73615671
+     The core correction contribution to forces
+     atom    1 type  1   force =    -0.01174477    0.01005368   -0.01322038
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The Hubbard contrib.    to forces
+     atom    1 type  1   force =     0.00000000    0.00000000    0.00000000
+     atom    2 type  2   force =     0.00000000    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+     The SCF correction term to forces
+     atom    1 type  1   force =    -0.00002772    0.00002881   -0.00003590
+     atom    2 type  2   force =    -0.00001745    0.00000251   -0.00000323
+     atom    3 type  2   force =     0.00000212    0.00001078   -0.00001413
+
+     Total force =     0.000046     Total SCF correction =     0.000059
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+     Message from routine bfgs:
+     history already reset at previous step: stopping
+
+     bfgs converged in   9 scf cycles and   7 bfgs steps
+     (criteria: energy <  1.0E-04 Ry, force <  0.0E+00 Ry/Bohr)
+
+     End of BFGS Geometry Optimization
+
+     Final energy   =     -44.0346998025 Ry
+Begin final coordinates
+
+ATOMIC_POSITIONS (angstrom)
+O        3.424713037   8.283009702   4.969102659
+H        4.395026014   8.257108115   5.003180387
+H        3.141730946   7.720584177   5.708675901
+End final coordinates
+
+
+
+     Writing output data file h2o.sc.save/
+
+     init_run     :      6.09s CPU      6.64s WALL (       1 calls)
+     electrons    :    292.45s CPU    316.10s WALL (       9 calls)
+     update_pot   :     26.85s CPU     28.51s WALL (       8 calls)
+     forces       :     41.62s CPU     45.11s WALL (       9 calls)
+
+     Called by init_run:
+     wfcinit      :      0.44s CPU      0.45s WALL (       1 calls)
+     wfcinit:atom :      0.01s CPU      0.02s WALL (       1 calls)
+     wfcinit:wfcr :      0.40s CPU      0.40s WALL (       1 calls)
+     potinit      :      2.62s CPU      2.86s WALL (       1 calls)
+     hinit0       :      1.92s CPU      1.99s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     62.94s CPU     63.33s WALL (      54 calls)
+     sum_band     :     68.62s CPU     77.88s WALL (      54 calls)
+     v_of_rho     :    111.22s CPU    117.58s WALL (      57 calls)
+     v_h          :     10.70s CPU     10.90s WALL (      57 calls)
+     v_xc         :    116.28s CPU    123.67s WALL (      66 calls)
+     newd         :     40.76s CPU     50.28s WALL (      57 calls)
+     PAW_pot      :      2.75s CPU      2.76s WALL (      65 calls)
+     mix_rho      :     17.17s CPU     17.52s WALL (      54 calls)
+
+     Called by c_bands:
+     init_us_2    :      1.67s CPU      1.69s WALL (     117 calls)
+     regterg      :     61.89s CPU     62.26s WALL (      54 calls)
+
+     Called by sum_band:
+     sum_band:bec :      0.00s CPU      0.00s WALL (      62 calls)
+     addusdens    :     43.20s CPU     52.42s WALL (      54 calls)
+
+     Called by *egterg:
+     h_psi        :     58.41s CPU     58.45s WALL (     219 calls)
+     s_psi        :      0.33s CPU      0.33s WALL (     219 calls)
+     g_psi        :      0.16s CPU      0.16s WALL (     164 calls)
+     rdiaghg      :      0.03s CPU      0.03s WALL (     204 calls)
+     regterg:over :      1.08s CPU      1.08s WALL (     164 calls)
+     regterg:upda :      0.77s CPU      0.78s WALL (     164 calls)
+     regterg:last :      0.32s CPU      0.32s WALL (      58 calls)
+
+     Called by h_psi:
+     h_psi:pot    :     58.21s CPU     58.24s WALL (     219 calls)
+     h_psi:calbec :      0.50s CPU      0.50s WALL (     219 calls)
+     vloc_psi     :     57.37s CPU     57.39s WALL (     219 calls)
+     add_vuspsi   :      0.34s CPU      0.34s WALL (     219 calls)
+
+     General routines
+     calbec       :      0.76s CPU      0.76s WALL (     317 calls)
+     fft          :     91.43s CPU     91.46s WALL (     704 calls)
+     ffts         :      4.16s CPU      4.16s WALL (     111 calls)
+     fftw         :     55.58s CPU     55.61s WALL (    1430 calls)
+     interpolate  :     11.17s CPU     11.40s WALL (      57 calls)
+     davcio       :      0.00s CPU      0.08s WALL (       8 calls)
+
+     Parallel routines
+
+     PAW routines
+     PAW_pot      :      2.75s CPU      2.76s WALL (      65 calls)
+
+     PWSCF        :   6m17.06s CPU   6m50.23s WALL
+
+
+   This run was terminated on:  17: 4:47   2Oct2023            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

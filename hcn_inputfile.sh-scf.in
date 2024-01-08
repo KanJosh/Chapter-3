@@ -1,0 +1,37 @@
+&control
+     calculation= 'relax',
+     verbosity='high'
+     prefix= 'hcn.sc'
+     etot_conv_thr= 1.0D-4
+     forc_conv_thr= 1.0D-3
+     pseudo_dir= '/home/jk7877/qe_potentials'
+/
+&system
+       ibrav= 1, 
+       A= 10,
+       nat= 3,
+       ntyp= 3,
+       ecutwfc= 50.0,
+       ecutrho= 350.0, 
+       occupations='smearing',
+        smearing= 'marzari-vanderbilt',
+        degauss= 0.02
+/
+
+&electrons
+         electron_maxstep= 100
+/
+&IONS
+/
+
+ATOMIC_SPECIES
+C        12.011           C.pbe-n-kjpaw_psl.1.0.0.UPF
+N        14.0067          N.pbe-n-kjpaw_psl.1.0.0.UPF
+H         1.00784         H.pbe-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS {angstrom}
+C        5.0945330000      4.1326600000      6.4255970000
+N        6.1909780000      3.7542930000      6.4098850000
+H        4.0878830000      4.4800400000      6.4400230000
+
+K_POINTS gamma
